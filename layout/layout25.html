@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 100%;
+            background: #fff;
+        }
+        #main {
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .clearfix::after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background: #c5cae9 ;
+        }
+        .sett1 {
+            width: 100%;
+            height: 400px;
+            background: #9fa8da ;
+        }
+        aside {
+            width: 33.33333%;
+            height: 300px;
+            background: #7986cb ;
+            float: left;
+        }
+        .art1 {
+            width: 66.66666%;
+            height: 150px;
+            background: #5c6bc0 ;
+            float: left;
+        }
+        .art2 {
+            width: 66.66666%;
+            height: 150px;
+            background: #3f51b5 ;
+            float: left;
+        }
+        .sec1 {
+            width: 33.3333%;
+            height: 200px;
+            background: #3949ab ;
+            float: left;
+        }
+        .sec2 {
+            width: 33.3333%;
+            height: 200px;
+            background: #303f9f ;
+            float: left;
+        }
+        .sec3 {
+            width: 33.3333%;
+            height: 200px;
+            background: #283593 ;
+            float: left;
+        }
+        .sett2 {
+            width: 100%;
+            height: 160px;
+            background: #9fa8da ;
+            clear: both;
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            background: #1a237e ;
+            clear: both;
+        }
+        .sett2 > div {
+            width: 23%;
+            height: 120px;
+            background: #1a237e ;
+            float: left;
+            margin: 1%;
+            border-radius: 20px;
+        }
+        
+        @media (max-width: 1200px){
+            #main {width: 70%;}
+            .sett2 {width: 100%; height: 140px;}
+        }
+        @media (max-width: 1024px){
+            #main {width: 100%}
+            .sett2 {width: 100%; height: 160px;}
+            .sec1 {width: 50%;}
+            .sec2 {width: 50%;}
+            .sec3 {width: 0; height: 0;}
+            .sett2 > div {width: 31.33333%;}
+            .sett2 .box4 {width: 0; height: 0;}
+        }
+        @media (max-width: 900px){
+            #main {width: 100%;}
+            .sett2 {width: 100%; height: 150px;}
+            .sec1 {width: 100%;}
+            .sec2 {width: 100%;}
+            .sec3 {width: 0; height: 0;}
+        }
+        @media (max-width: 600px){
+            #main {width: 100%;}
+            aside {width: 100%;}
+            .art1 {width: 100%;}
+            .art2 {width: 100%;}
+            .art3 {width: 100%;}
+            .sec1 {width: 100%;}
+            .sec2 {width: 100%;}
+            .sec3 {width: 100%;}
+            .sett2 {width: 100%; height: 400px;}
+            .sett2 > .box1 {width: 98%;}
+            .sett2 > .box2 {width: 98%;}
+            .sett2 > .box3 {width: 98%;}
+            .sett2 > .box4 {width: 0%;}
+            .footer {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <main id="main" class ="clearfix">
+            <header></header>
+            <section class="sett1"></section>
+            <aside></aside>
+            <article class="art1"></article>
+            <article class="art2"></article>
+            <section class="sec1"></section>
+            <section class="sec2"></section>
+            <section class="sec3"></section>
+            <section class="sett2">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+            </section>
+            <footer></footer>
+        </main>
+    </div>
+</body>
+</html>
